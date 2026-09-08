@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Philippine News Hub</title>
+  <meta name="description" content="A free Philippines news aggregator powered by RSS feeds.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <div class="brand"><span>🇵🇭</span><div><strong>Philippine News Hub</strong><small>News from multiple sources</small></div></div>
+    <button id="refresh" class="refresh">↻ Refresh</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow">PHILIPPINES • NEWS AGGREGATOR</p>
+    <h1>What's happening<br><span>in the Philippines?</span></h1>
+    <p class="sub">A simple, free RSS-powered reader that brings headlines from several Philippine news sources into one place.</p>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search headlines…">
+      <select id="source"><option value="all">All sources</option></select>
+      <select id="category">
+        <option value="all">All categories</option>
+        <option value="news">News</option>
+        <option value="business">Business</option>
+        <option value="sports">Sports</option>
+        <option value="technology">Technology</option>
+      </select>
+    </div>
+  </section>
+
+  <div id="status" class="status">Loading latest headlines…</div>
+  <section id="grid" class="grid"></section>
+  <div id="empty" class="empty" hidden>No articles match your search.</div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Philippine News Hub</strong> · Headlines are provided by their respective publishers through RSS.</p>
+    <p>This site links to original articles and does not republish full article text.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
